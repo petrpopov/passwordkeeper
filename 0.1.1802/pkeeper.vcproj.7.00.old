@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.00"
+	Name="pkeeper"
+	ProjectGUID="{A331711E-B1DB-33DF-9966-961D4DF8C8B6}">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="."
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			ConfigurationType="1"
+			UseOfMfc="0">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="$(QTDIR)\include,E:\Programs\Password keeper\0.1.1802,F:\Qt\3.3.3\mkspecs\win32-msvc.net"
+				AdditionalOptions="-Zm200 -w34100 -w34189"
+				AssemblerListingLocation=".\"
+				BufferSecurityCheck="FALSE"
+				DebugInformationFormat="0"
+				ExceptionHandling="FALSE"
+				GeneratePreprocessedFile="0"
+				ObjectFile=".\"
+				Optimization ="1"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,_WINDOWS,UNICODE,WIN32,QT_DLL,QT_THREAD_SUPPORT,NDEBUG"
+				ProgramDataBaseFileName=".\"
+				RuntimeLibrary="2"
+				SuppressStartupBanner="TRUE"
+				WarningLevel="3"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="qt-mt333.lib qtmain.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib imm32.lib winmm.lib wsock32.lib winspool.lib delayimp.lib"
+				AdditionalLibraryDirectories="$(QTDIR)\lib"
+				DelayLoadDLLs="comdlg32.dll,oleaut32.dll,winmm.dll,wsock32.dll,winspool.dll"
+				GenerateDebugInformation="FALSE"
+				IgnoreImportLibrary="TRUE"
+				OutputFile=".\pkeeper.exe"
+				ProgramDatabaseFile=""
+				SubSystem="2"
+				SuppressStartupBanner="TRUE"/>
+			<Tool
+				Name="VCMIDLTool"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+				WarningLevel="0"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"/>
+		</Configuration>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="."
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			ConfigurationType="1"
+			IntermediateDirectory="Debug\"
+			UseOfMfc="0">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="$(QTDIR)\include,E:\Programs\Password keeper\0.1.1802,F:\Qt\3.3.3\mkspecs\win32-msvc.net"
+				AdditionalOptions="-Zm200 -w34100 -w34189"
+				AssemblerListingLocation="Debug\"
+				BufferSecurityCheck="FALSE"
+				DebugInformationFormat="3"
+				ExceptionHandling="FALSE"
+				GeneratePreprocessedFile="0"
+				MinimalRebuild="TRUE"
+				ObjectFile="Debug\"
+				Optimization ="1"
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_DLL,QT_THREAD_SUPPORT"
+				ProgramDataBaseFileName=".\"
+				RuntimeLibrary="2"
+				SuppressStartupBanner="TRUE"
+				WarningLevel="3"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="qt-mt333.lib qtmain.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib imm32.lib winmm.lib wsock32.lib winspool.lib delayimp.lib"
+				AdditionalLibraryDirectories="$(QTDIR)\lib"
+				GenerateDebugInformation="TRUE"
+				IgnoreImportLibrary="TRUE"
+				OutputFile="Debug\\pkeeper.exe"
+				ProgramDatabaseFile=""
+				SubSystem="2"
+				SuppressStartupBanner="TRUE"/>
+			<Tool
+				Name="VCMIDLTool"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+				WarningLevel="0"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat">
+			<File
+				RelativePath="changeprofile.cpp">
+			</File>
+			<File
+				RelativePath="checkpass.cpp">
+			</File>
+			<File
+				RelativePath="createprofile.cpp">
+			</File>
+			<File
+				RelativePath="main.cpp">
+			</File>
+			<File
+				RelativePath="mainform.cpp">
+			</File>
+			<File
+				RelativePath="md2.cpp">
+			</File>
+			<File
+				RelativePath="newfield.cpp">
+			</File>
+			<File
+				RelativePath="rc4.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl">
+			<File
+				RelativePath="changeprofile.h">
+				<FileConfiguration
+					Name="Release|Win32">
+			<Tool
+				Name="VCCustomBuildTool"
+				AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+				CommandLine="$(QTDIR)\bin\moc.exe changeprofile.h -o moc_changeprofile.cpp"
+				Description="Moc&apos;ing changeprofile.h..."
+				Outputs="moc_changeprofile.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+			<Tool
+				Name="VCCustomBuildTool"
+				AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+				CommandLine="$(QTDIR)\bin\moc.exe changeprofile.h -o moc_changeprofile.cpp"
+				Description="Moc&apos;ing changeprofile.h..."
+				Outputs="moc_changeprofile.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="checkpass.h">
+				<FileConfiguration
+					Name="Release|Win32">
+			<Tool
+				Name="VCCustomBuildTool"
+				AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+				CommandLine="$(QTDIR)\bin\moc.exe checkpass.h -o moc_checkpass.cpp"
+				Description="Moc&apos;ing checkpass.h..."
+				Outputs="moc_checkpass.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+			<Tool
+				Name="VCCustomBuildTool"
+				AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+				CommandLine="$(QTDIR)\bin\moc.exe checkpass.h -o moc_checkpass.cpp"
+				Description="Moc&apos;ing checkpass.h..."
+				Outputs="moc_checkpass.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="createprofile.h">
+				<FileConfiguration
+					Name="Release|Win32">
+			<Tool
+				Name="VCCustomBuildTool"
+				AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+				CommandLine="$(QTDIR)\bin\moc.exe createprofile.h -o moc_createprofile.cpp"
+				Description="Moc&apos;ing createprofile.h..."
+				Outputs="moc_createprofile.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+			<Tool
+				Name="VCCustomBuildTool"
+				AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+				CommandLine="$(QTDIR)\bin\moc.exe createprofile.h -o moc_createprofile.cpp"
+				Description="Moc&apos;ing createprofile.h..."
+				Outputs="moc_createprofile.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="mainform.h">
+				<FileConfiguration
+					Name="Release|Win32">
+			<Tool
+				Name="VCCustomBuildTool"
+				AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+				CommandLine="$(QTDIR)\bin\moc.exe mainform.h -o moc_mainform.cpp"
+				Description="Moc&apos;ing mainform.h..."
+				Outputs="moc_mainform.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+			<Tool
+				Name="VCCustomBuildTool"
+				AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+				CommandLine="$(QTDIR)\bin\moc.exe mainform.h -o moc_mainform.cpp"
+				Description="Moc&apos;ing mainform.h..."
+				Outputs="moc_mainform.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="md2.h">
+			</File>
+			<File
+				RelativePath="newfield.h">
+				<FileConfiguration
+					Name="Release|Win32">
+			<Tool
+				Name="VCCustomBuildTool"
+				AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+				CommandLine="$(QTDIR)\bin\moc.exe newfield.h -o moc_newfield.cpp"
+				Description="Moc&apos;ing newfield.h..."
+				Outputs="moc_newfield.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+			<Tool
+				Name="VCCustomBuildTool"
+				AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+				CommandLine="$(QTDIR)\bin\moc.exe newfield.h -o moc_newfield.cpp"
+				Description="Moc&apos;ing newfield.h..."
+				Outputs="moc_newfield.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="rc4.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated MOC Files"
+			Filter="cpp;c;cxx;moc">
+			<File
+				RelativePath="moc_changeprofile.cpp">
+			</File>
+			<File
+				RelativePath="moc_checkpass.cpp">
+			</File>
+			<File
+				RelativePath="moc_createprofile.cpp">
+			</File>
+			<File
+				RelativePath="moc_mainform.cpp">
+			</File>
+			<File
+				RelativePath="moc_newfield.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Resources"
+			ParseFiles="FALSE"
+			Filter="cpp;ico;png;jpg;jpeg;gif;xpm;bmp;rc;ts">
+			<File
+				RelativePath="icons/account.png">
+				<FileConfiguration
+					Name="Release|Win32">
+			<Tool
+				Name="VCCustomBuildTool"
+				AdditionalDependencies="$(QTDIR)\bin\uic.exe;icons/close.png;icons/new.png;icons/open.png;icons/save.png;icons/delete.png;icons/delete_all.png;icons/tb_close.png;icons/tb_delete.png;icons/tb_new.png;icons/tb_open.png;icons/tb_save.png;icons/account.png;icons/icq.png;icons/irc.png;icons/mail.png;icons/system.png;icons/other.png;icons/edit.png;icons/tb_edit.png;icons/undo.png;icons/tb_undo.png;icons/redo.png;icons/tb_redo.png"
+				CommandLine="echo icons/close.png icons/new.png icons/open.png icons/save.png icons/delete.png icons/delete_all.png icons/tb_close.png icons/tb_delete.png icons/tb_new.png icons/tb_open.png icons/tb_save.png icons/account.png icons/icq.png icons/irc.png icons/mail.png > .imgcol
+echo icons/system.png icons/other.png icons/edit.png icons/tb_edit.png icons/undo.png icons/tb_undo.png icons/redo.png icons/tb_redo.png >> .imgcol
+$(QTDIR)\bin\uic.exe -embed pkeeper -f .imgcol -o qmake_image_collection.cpp"
+				Description="Generate imagecollection"
+				Outputs="qmake_image_collection.cpp;.imgcol"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+			<Tool
+				Name="VCCustomBuildTool"
+				AdditionalDependencies="$(QTDIR)\bin\uic.exe;icons/close.png;icons/new.png;icons/open.png;icons/save.png;icons/delete.png;icons/delete_all.png;icons/tb_close.png;icons/tb_delete.png;icons/tb_new.png;icons/tb_open.png;icons/tb_save.png;icons/account.png;icons/icq.png;icons/irc.png;icons/mail.png;icons/system.png;icons/other.png;icons/edit.png;icons/tb_edit.png;icons/undo.png;icons/tb_undo.png;icons/redo.png;icons/tb_redo.png"
+				CommandLine="echo icons/close.png icons/new.png icons/open.png icons/save.png icons/delete.png icons/delete_all.png icons/tb_close.png icons/tb_delete.png icons/tb_new.png icons/tb_open.png icons/tb_save.png icons/account.png icons/icq.png icons/irc.png icons/mail.png > .imgcol
+echo icons/system.png icons/other.png icons/edit.png icons/tb_edit.png icons/undo.png icons/tb_undo.png icons/redo.png icons/tb_redo.png >> .imgcol
+$(QTDIR)\bin\uic.exe -embed pkeeper -f .imgcol -o qmake_image_collection.cpp"
+				Description="Generate imagecollection"
+				Outputs="qmake_image_collection.cpp;.imgcol"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="icons/close.png">
+			</File>
+			<File
+				RelativePath="icons/delete.png">
+			</File>
+			<File
+				RelativePath="icons/delete_all.png">
+			</File>
+			<File
+				RelativePath="icons/edit.png">
+			</File>
+			<File
+				RelativePath="icons/icq.png">
+			</File>
+			<File
+				RelativePath="icons/irc.png">
+			</File>
+			<File
+				RelativePath="icons/mail.png">
+			</File>
+			<File
+				RelativePath="icons/new.png">
+			</File>
+			<File
+				RelativePath="icons/open.png">
+			</File>
+			<File
+				RelativePath="icons/other.png">
+			</File>
+			<File
+				RelativePath="icons/redo.png">
+			</File>
+			<File
+				RelativePath="icons/save.png">
+			</File>
+			<File
+				RelativePath="icons/system.png">
+			</File>
+			<File
+				RelativePath="icons/tb_close.png">
+			</File>
+			<File
+				RelativePath="icons/tb_delete.png">
+			</File>
+			<File
+				RelativePath="icons/tb_edit.png">
+			</File>
+			<File
+				RelativePath="icons/tb_new.png">
+			</File>
+			<File
+				RelativePath="icons/tb_open.png">
+			</File>
+			<File
+				RelativePath="icons/tb_redo.png">
+			</File>
+			<File
+				RelativePath="icons/tb_save.png">
+			</File>
+			<File
+				RelativePath="icons/tb_undo.png">
+			</File>
+			<File
+				RelativePath="icons/undo.png">
+			</File>
+			<File
+				RelativePath="qmake_image_collection.cpp">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>
